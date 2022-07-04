@@ -2,6 +2,8 @@
 
 To make building Tampermonkey-script faster
 
-![](./docs/imgs/dist.png)
+![](./docs/imgs/howToUse/dist.png)
 
 Copy this file to your new Tampermonkey script and write some configs.
+
+![](./docs/imgs/howToUse/copyTheFile.png)
