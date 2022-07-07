@@ -3,8 +3,8 @@
 To make building Tampermonkey-script faster
 
 ```shell
-npx degit SoonIter/tempermonkey-svelte-template my-app
-pnpx degit SoonIter/tempermonkey-svelte-template my-app
+npx degit SoonIter/tampermonkey-svelte-template my-app
+pnpx degit SoonIter/tampermonkey-svelte-template my-app
 ```
 
 ![](./docs/imgs/howToUse/dist.png)
@@ -12,3 +12,5 @@ pnpx degit SoonIter/tempermonkey-svelte-template my-app
 Copy this file to your new Tampermonkey script and write some configs.
 
 ![](./docs/imgs/howToUse/copyTheFile.png)
+
+Seperate your code in the shadow-root with the main webpage.
