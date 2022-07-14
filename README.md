@@ -18,4 +18,4 @@ Copy this file to your new Tampermonkey script and write some configs.
 
 ![](./docs/imgs/howToUse/copyTheFile.png)
 
-Seperate your code in the shadow-root with the main webpage.
+Seperate your code in the shadow-root with the main webpage whether js , css or png.
