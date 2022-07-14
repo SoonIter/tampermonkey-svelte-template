@@ -1,4 +1,9 @@
-# A template with Svelte + TS + Tailwind + Vite to build UI - Tampermonkey script
+# A template with Svelte + TS + Unocss + Vite to build UI - Tampermonkey script
+Svelte , Typescript, Vite
+
+Unocss
+
+unplugin-auto-import
 
 To make building Tampermonkey-script faster
 

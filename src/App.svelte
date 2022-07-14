@@ -8,11 +8,13 @@
 >
   <img src={logo} alt="Svelte Logo" class="w-10 h-10 shadow" />
   <div class="w-30 h-10 shadow m-10 font-bolder text-orange-500 font-mono">
-    Hello Typescript + Tailwind + Svelte
+    Hello Typescript + Unocss + Svelte + Vite
   </div>
 
+  <div text="blue">hello unocss</div>
   <Counter />
 </main>
 
 <style>
+  
 </style>

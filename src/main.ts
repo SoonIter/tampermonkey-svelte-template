@@ -1,5 +1,6 @@
 import App from './App.svelte';
-import tailwindBase from './assets/tailwind.css';
+// import 'uno.css';
+
 // 创建顶层 document 环境的 dom 节点
 function createContainerInDocument() {
   const container = document.createElement('div');
@@ -20,15 +21,8 @@ function createDom() {
   document.body.appendChild(container);
   return containerInShadow;
 }
-function copyCssFromMainDocument(container) {
-  // [...document.querySelectorAll('style')].map((i)=>i.cloneNode(true)).forEach((i)=>container.appendChild(i));
-  // [...document.querySelectorAll('link')].map(i=>i.cloneNode(true)).forEach(i=>container.appendChild(i));
-  const styleDom = document.createElement('style');
-  styleDom.innerText = tailwindBase;
-  container.appendChild(styleDom);
-}
+
 const appDom = createDom();
-copyCssFromMainDocument(appDom);
 const app = new App({
   target: appDom,
 });
