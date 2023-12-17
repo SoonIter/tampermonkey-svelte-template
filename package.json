@@ -1,17 +1,16 @@
 {
-  "name": "sooniter-svelte-template",
+  "name": "tampermonkey-script-svelte-template",
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@7.5.0",
-  "description": "自用的库模版",
+  "description": "",
   "author": {
     "name": "SoonIter",
-    "email": "1730214056@qq.com"
+    "email": "sooniter@gmail.com"
   },
   "license": "MIT",
   "keywords": [
-    "react",
-    "[name]"
+    "tampermonkey",
+    "svelte"
   ],
   "repository": "https://github.com/SoonIter/[name]",
   "bugs": {
@@ -39,7 +38,7 @@
     "typescript": "^4.5.4",
     "unocss": "^0.44.2",
     "unplugin-auto-import": "^0.9.3",
-    "vite": "^3.0.0"
+    "vite": "^3.2.7"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

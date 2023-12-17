@@ -12,7 +12,8 @@ export default defineConfig({
       dts: './src/assets/types/auto-imports.d.ts',
     }),
     Unocss({
-      mode:"svelte-scoped",
+      // Place generated CSS for each Svelte component's utility styles directly into the Svelte component's <style> block instead of in a global CSS file.
+      mode: "svelte-scoped",
       extractors: [extractorSvelte],
       presets: [
         presetAttributify({
@@ -27,10 +28,10 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      name: 'chunk',
-      fileName: 'chunk',
+      name: 'Tampermonkey',
+      fileName: 'Tampermonkey',
       entry: './src/main.ts',
-      formats: ['umd'],
+      formats: ['iife'],
     },
   },
 });

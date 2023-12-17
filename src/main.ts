@@ -1,22 +1,26 @@
+// mount Svelte app in shadow root to isolate css
 import App from './App.svelte';
-// import 'uno.css';
 
-// 创建顶层 document 环境的 dom 节点
+// create <div id="tempermonkey-app"></div>
 function createContainerInDocument() {
   const container = document.createElement('div');
   container.id = 'tempermonkey-app';
   return container;
 }
-// 创建 shadowRoot 环境下的 container 节点（用于挂在 Vue 示例）
-function containerInShadowRoot() {
+
+// create <div id="tempermonkey-app-shadow-container"></div>
+function createContainerInShadowRoot() {
   const container = document.createElement('div');
   container.id = 'tempermonkey-app-shadow-container';
   return container;
 }
+
+// div#tempermonkey-app > #shadow-root > div#tempermonkey-app-shadow-container
 function createDom() {
   const container = createContainerInDocument();
   const shadowRoot = container.attachShadow({ mode: 'closed' });
-  const containerInShadow = containerInShadowRoot();
+  const containerInShadow = createContainerInShadowRoot();
+
   shadowRoot.appendChild(containerInShadow);
   document.body.appendChild(container);
   return containerInShadow;
